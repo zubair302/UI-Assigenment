@@ -1,0 +1,358 @@
+/* CSS Reset */
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 15px;
+
+}
+
+h1 p {
+  font-family: 'Rubik', sans-serif;
+}
+
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Navigation Bar */
+.navbar {
+  position: sticky;
+}
+
+.navbar {
+
+  position: absolute;
+}
+
+/* small */
+
+@media screen and (max-width: 991px) {
+  .navbar {
+    background-color: black;
+
+  }
+}
+
+
+
+.navbar-toggler.collapsed[aria-expanded="false"] {
+  background-color: #0a0a0a;
+}
+
+.navbar-toggler:not(.collapsed)[aria-expanded="true"] {
+  background-color: transparent;
+  border: #000;
+
+}
+
+.navbar .logo {
+  margin: 5px;
+  width: 45px;
+  height: 45px;
+}
+
+@media screen and (max-width: 991px) {
+  .navbar .logo {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+
+  }
+}
+
+
+
+
+.navbar ul li {
+
+  margin: 20px;
+
+
+}
+
+.navbar ul li a {
+  color: white;
+  display: block;
+  padding: 3px 15px;
+  text-decoration: none;
+  font-family: 'Rubik', sans-serif;
+  font-size: 15px;
+}
+
+.navbar ul li a:hover {
+  color: white;
+  background-color: none;
+  border-bottom: 5px solid red;
+  padding-bottom: 25px;
+
+}
+
+/* Home Section */
+.home {
+  display: flex;
+  padding: 3px 20px;
+  height: 450px;
+  justify-content: center;
+  align-items: center;
+
+
+}
+
+.home::before {
+  content: "";
+  position: absolute;
+  background: url('hero-image.png') no-repeat center center/cover;
+  height: 600px;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  z-index: -1;
+
+
+}
+
+.h-primary {
+  align-items: center;
+  color: white;
+  text-align: center;
+  font-family: 'Rubik', sans-serif;
+  font-size: 50px;
+
+}
+@media screen and (max-width: 500px) {
+  .h-primary{
+    font-size: 30px;
+  }
+}
+.home .btn {
+  padding: 6px 20px;
+  background-color: red;
+  color: white;
+  margin: 17px;
+  cursor: pointer;
+  border-radius: 0;
+
+}
+
+/* appstore */
+.pack {
+  background-image: url("h2-background-img-3.jpg");
+  position: relative;
+  width: 100%;
+
+  background-position: center center;
+  background-size: cover;
+
+}
+
+.h-secondary {
+  margin-top: 20px;
+  color: white;
+  text-align: center;
+  font-family: 'Rubik';
+  padding-top: 15px;
+}
+
+
+
+.pack .image {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  margin-bottom: 35px;
+  margin-top: 50px;
+
+
+}
+
+.caption {
+  font-family: 'Rubik';
+  font-size: 15px;
+  color: white;
+  margin: 5px;
+}
+
+.logo {
+  margin-bottom: 40px;
+}
+
+/* True Dream */
+.truedream .row {
+  display: flex;
+  margin-right: 0;
+  margin-left: 0;
+
+}
+
+
+
+.truedream {
+  background-color: rgb(0, 0, 0);
+  position: relative;
+  align-items: center;
+
+}
+
+
+.truedream .h2-third {
+  position: relative;
+  font-family: 'Rubik';
+  align-items: center;
+  color: white;
+  text-align: center;
+}
+
+
+.truedream .text {
+  font-family: sans-serif;
+  font-size: 15px;
+  color: white;
+  text-align: center;
+}
+
+
+.truedream .btn {
+  padding: 10px 30px;
+  border: solid red;
+  background-color: red;
+  color: white;
+  margin: 25px;
+  cursor: pointer;
+  border-radius: 0px;
+
+}
+
+.truedream img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  }
+
+/* Review */
+.review {
+  background-color: rgb(27, 27, 27);
+  position: relative;
+}
+
+.review .row {
+  width: 100%;
+  position: relative;
+  align-content: center;
+
+}
+
+.review p {
+  font-family: sans-serif;
+  font-size: 15px;
+  color: white;
+  align-self: center;
+}
+
+/* ROBOTCAVE */
+.robot {
+  display: flex;
+  background-color: rgb(0, 0, 0);
+  background-size: cover;
+  position: relative;
+
+
+
+}
+
+.robot .row {
+  display: flex;
+  width: 100%;
+  align-content: center;
+  justify-content: center;
+  
+}
+
+
+
+.robot h1 {
+  font-family: 'Rubik';
+  color: white;
+  margin: 55px;
+  position: relative;
+
+}
+
+.robot p {
+  margin-top: 40px;
+  font-family: sans-serif;
+  font-size: 15px;
+  color: white;
+  margin: 25px;
+  margin-left: 55px;
+}
+
+.robot .btn {
+  padding: 10px 30px;
+  border: solid red;
+  font-family:  sans-serif;
+  background-color: red;
+  color: white;
+  margin: 25px;
+  margin-left: 0px;
+  cursor: pointer;
+  border-radius: 0;
+}
+
+.robot img {
+  max-width: 100%;
+  height: auto;
+}
+
+@media (max-width: 576px) {
+  .robot img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+
+/* Video-Image Section */
+
+.video-img {
+  display: center;
+  position: relative;
+  height: 70;
+  width: 100%;
+  background-image: url(h2-background-img-3_edited1.jpg);
+  background-repeat: repeat-y;
+}
+
+/*FOOOTER*/
+
+
+.footer .logo{
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+}
+.footer .logo li{
+  margin:4px
+}
+
+
+.footer {
+  height: auto;
+  width: 100%;
+  background-color: #000000;
+  color: white;
+}
+
+.footer .btn{
+  color: white;
+ 
+}
+
+  @media screen and (min-width: 715px) {
+    .custom-input {
+      max-width: 600px; /* Adjust the value as per your requirements */
+      width: 100%;
+      }}
