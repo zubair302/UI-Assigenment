@@ -323,6 +323,20 @@ html {
   background-image: url(h2-background-img-3_edited1.jpg);
   background-repeat: repeat-y;
 }
+.front-image {
+  padding: 250px
+  }
+  @media screen and (min-width: 991px) {
+    .front-image{
+      padding: 150px;
+    }
+  }
+  @media screen and (min-width: 414px) {
+    .front-image{
+      padding: 50;
+    }
+  }
+
 
 /*FOOOTER*/
 
