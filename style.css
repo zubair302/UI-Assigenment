@@ -315,6 +315,7 @@ html {
 
 /* Video-Image Section */
 
+}
 .video-img {
   display: center;
   position: relative;
@@ -326,12 +327,12 @@ html {
 .front-image {
   padding: 250px;
   }
-  @media screen and (min-width: 991px) {
+  @media screen and (max-width: 991px) {
     .front-image{
       padding: 150px;
     }
   }
-  @media screen and (min-width: 414px) {
+  @media screen and (max-width: 414px) {
     .front-image{
       padding: 50px;
     }
